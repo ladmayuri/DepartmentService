@@ -1,0 +1,19 @@
+spring:
+  application:
+      name: departmentservice
+  datasource:
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/postgres
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+server:
+  port: '8086'
+
+      
+#Discover server access
+eureka:
+   client:
+     serviceUrl:
+       defaultZone: http://localhost:1111/eureka/
